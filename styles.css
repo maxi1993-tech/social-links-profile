@@ -111,3 +111,10 @@ li:hover a {
 .attribution a {
     color: var(--color-footer);
 }
+
+@media screen and (max-width: 375px){
+    article {
+        width: 280px;
+        padding: 15px 17px 16px 17px;
+    }
+}
