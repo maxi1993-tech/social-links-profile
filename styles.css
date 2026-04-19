@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--color-text);
 }
 
 :root {
@@ -28,7 +29,6 @@ body {
     align-items: center;
     text-align: center;
     background-color: var(--color-bg);
-    color: var(--color-text);
     font-family: var(--font-family);
 }
 
