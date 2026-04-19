@@ -8,9 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    font-family: var(--font-family);
-    color: var(--color-text);
 }
 
 :root {
@@ -21,66 +18,69 @@
     --color-location: hsl(75, 94%, 57%);
     --color-footer: hsl(228, 45%, 44%);
     --font-family: "Inter", sans-serif;
-    --radius: 4px;
+    --radius: 8px;
 }
 
 body {
     min-height: 100vh;
-    background-color: var(--color-bg);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-family);
 }
 
 article {
-    width: 310px;
+    width: 384px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 31px 35px 32px 35px;
+    padding: 38px 39px;
     border-radius: 10px;
     background-color: var(--color-card);
 
 }
 
 img {
-    width: 72px;
-    height: 72px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin: auto;
 
 }
  
 h1 {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 22px 0 9px 0;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 28px 0 12px 0;
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
 }
 
-h1 + p {
-    font-size: 11px;
+.location {
+    font-size: 14px;
     font-weight: 600;
-    padding-bottom: 22px;
+    padding-bottom: 28px;
     color: var(--color-location);
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    padding-top: 20px;
+    gap: 16px;
+    padding-top: 25px;
 }
 
 li {
     width: 100%;
     text-align: center;
-    padding: 8px;
+    list-style-type: none;
+    padding: 13px;
     border-radius: var(--radius);
     background-color: var(--color-box-links);
 }
@@ -88,7 +88,7 @@ li {
 a {
     text-decoration: none;
     text-align: center;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -114,7 +114,7 @@ li:hover a {
 
 @media screen and (max-width: 375px){
     article {
-        width: 280px;
-        padding: 15px 17px 16px 17px;
+        width: 320px;
+        padding: 22px;
     }
 }
