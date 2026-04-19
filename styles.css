@@ -1,8 +1,90 @@
-.attribution {
-    font-size: 0.6875rem;
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: var(--font-family);
+    color: var(--color-text);
+}
+
+:root {
+    --color-bg: hsl(0, 0%, 8%);
+    --color-card: hsl(0, 0%, 12%);
+    --color-box-links: hsl(0, 0%, 20%);
+    --color-text: hsl(0, 0%, 100%);
+    --color-location: hsl(75, 94%, 57%);
+    --color-footer: hsl(228, 45%, 44%);
+    --font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--color-card);
+
+}
+
+img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+
+}
+ 
+h1 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 11px;
+}
+
+h1 + p {
+    color: var(--color-location);
+    font-size: 11px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li {
+    text-align: center;
+    background-color: var(--color-box-links);
+}
+
+a {
+    text-decoration: none;
     text-align: center;
 }
 
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color-footer);
 }
