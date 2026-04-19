@@ -21,6 +21,7 @@
     --color-location: hsl(75, 94%, 57%);
     --color-footer: hsl(228, 45%, 44%);
     --font-family: "Inter", sans-serif;
+    --radius: 4px;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 article {
@@ -36,8 +38,8 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
+    padding: 31px 35px 32px 35px;
+    border-radius: 10px;
     background-color: var(--color-card);
 
 }
@@ -46,36 +48,57 @@ img {
     width: 72px;
     height: 72px;
     border-radius: 50%;
+    margin: auto;
 
 }
  
 h1 {
     font-size: 20px;
+    font-weight: 700;
+    padding: 22px 0 9px 0;
 }
 
 p {
     font-size: 11px;
+    font-weight: 400;
 }
 
 h1 + p {
-    color: var(--color-location);
     font-size: 11px;
+    font-weight: 600;
+    padding-bottom: 22px;
+    color: var(--color-location);
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
+    padding-top: 20px;
 }
 
 li {
+    width: 100%;
     text-align: center;
+    padding: 8px;
+    border-radius: var(--radius);
     background-color: var(--color-box-links);
 }
 
 a {
     text-decoration: none;
     text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+li:hover {
+    background-color: var(--color-location);
+    cursor: pointer;
+}
+
+li:hover a {
+    color: var(--color-card);
 }
 
 .attribution {
